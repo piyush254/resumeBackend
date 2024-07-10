@@ -24,7 +24,7 @@ const PORT = 5000;
 app.get("/" , (req ,resp)=>{
   resp.send ("ok")
 })
-app.get('/piyush/resume/overleaf', (req, res) => {
+app.get('/piyush', (req, res) => {
   const filePath = path.join(__dirname, 'Resume', 'file.pdf');
   res.sendFile(filePath, err => {
     if (err) {
