@@ -9,17 +9,18 @@ const PORT = 5000;
 //Raja software
 // https://acciojob.zoom.us/j/84638755407?
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password12',
-  database: 'myresume'
-});
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'password12',
+//   database: 'myresume'
+// });
 
-connection.connect(err => {
-  if (err) throw err;
-  console.log('Connected to the database');
-});
+// connection.connect(err => {
+//   if (err) throw err;
+//   console.log('Connected to the database');
+// });
+
 app.get("/" , (req ,resp)=>{
   resp.send ("ok")
 })
