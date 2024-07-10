@@ -6,6 +6,9 @@ const path = require('path')
 const PORT = 5000;
 
 
+//Raja software
+// https://acciojob.zoom.us/j/84638755407?
+
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -17,7 +20,9 @@ connection.connect(err => {
   if (err) throw err;
   console.log('Connected to the database');
 });
-
+app.get("/" , (req ,resp)=>{
+  resp.send ("ok")
+})
 app.get('/piyush/resume/overleaf', (req, res) => {
   const filePath = path.join(__dirname, 'Resume', 'file.pdf');
   res.sendFile(filePath, err => {
